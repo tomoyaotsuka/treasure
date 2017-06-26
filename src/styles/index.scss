@@ -1,0 +1,32 @@
+body {
+  padding: 20px;
+  font-family: Verdana, Roboto, "Droid Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 11px;
+  letter-spacing: .1em;
+  font-feature-settings : "palt";
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+header {
+  margin: 0 0 40px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 13px;
+}
+
+[class^="track-"] {
+  height: 400px;
+  margin: 0 0 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.track-1 { background: #0D19A3; }
+.track-2 { background: #CB1B45  ; }
+.track-3 { background: #DB4D6D; }
+.track-4 { background: #EFBB24; }
+.track-5 { background: #00896C; }

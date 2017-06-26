@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------------------------*/
+/* Mixin */
+/*--------------------------------------------------------------------------------*/
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin hidetxt {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+@mixin bold {
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+}
+
+@mixin media ( $mediaSize ) {
+
+  @if $mediaSize == "sp" {
+    @media screen and (max-width: $sp) {
+      @content;
+    }
+  }
+  @if $mediaSize == "short-sp" {
+    @media screen and (max-width: $short-sp) {
+      @content;
+    }
+  }
+  @if $mediaSize == "short-landscape" {
+    @media screen and (min-width: 480px) {
+      @content;
+    }
+  }
+}

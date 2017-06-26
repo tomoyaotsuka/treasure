@@ -1,0 +1,34 @@
+extends ./_app/application.pug
+
+block basetag
+  - path = '.'
+
+block meta
+  - title          = ''
+  - keywords       = ''
+  - description    = ''
+
+block var
+  - page_name  = ''
+  - page_class = 'index'
+
+block content
+  section.page-index#index
+    header
+      h1 Treasure
+      p Send GoogleAnalytics event when the reading through of the content.
+    section.track-1(data-track-category='Category1' data-track-scroll='Label1' runtime='3000' debug='true')
+      h2 Area1
+      p Class name="track-1", Category name="Category1", Label name="Label1", Runtime="3000"
+    section.track-2(data-track-category='Category2' data-track-scroll='Label2' runtime='3000' debug='true')
+      h2 Area2
+      p Class name="track-2", Category name="Category2", Label name="Label2", Runtime="3000"
+    section.track-3(data-track-category='Category3' data-track-scroll='Label3' runtime='3000' debug='true')
+      h2 Area3
+      p Class name="track-3", Category name="Category3", Label name="Label3", Runtime="3000"
+    section.track-4(data-track-category='Category4' data-track-scroll='Label4' runtime='3000' debug='true')
+      h2 Area4
+      p Class name="track-4", Category name="Category4", Label name="Label4", Runtime="3000"
+    section.track-5(data-track-category='Category5' data-track-scroll='Label5' runtime='3000' debug='true')
+      h2 Area5
+      p Class name="track-5", Category name="Category5", Label name="Label5", Runtime="3000"
